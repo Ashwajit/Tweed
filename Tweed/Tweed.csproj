@@ -58,14 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChromeTest.cs" />
-    <Compile Include="PageObjects\InvestmentsPage.cs" />
+    <Compile Include="PageObjects\BasePage.cs" />
+    <Compile Include="Tests\Functional\GlobalNavTest.cs" />
+    <Compile Include="PageObjects\Global\GlobalNavComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PageObjects\Investments\" />
+    <Folder Include="Tests\EndToEnd\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
