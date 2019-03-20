@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\BasePage.cs" />
+    <Compile Include="PageObjects\Home\HomePage.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\Functional\GlobalNavTest.cs" />
     <Compile Include="PageObjects\Global\GlobalNavComponent.cs" />
