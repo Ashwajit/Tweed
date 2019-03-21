@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Tweed.PageObjects
+namespace Tweed.PageObjects.Global.NavComponent
 {
-    class GlobalNavComponent : BasePage
+    class Logo : BasePage
     {        
-        public GlobalNavComponent(IWebDriver driver) : base(driver)
+        public Logo(IWebDriver driver) : base(driver)
         {
             PageFactory.InitElements(driver, this);
         }
