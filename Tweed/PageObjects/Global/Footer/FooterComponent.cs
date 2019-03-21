@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Tweed.PageObjects.Global.FooterComponent
+namespace Tweed.PageObjects.Global.Footer
 {
-    class Footer : BasePage
+    class FooterComponent : BasePage
     {
-        public Footer(IWebDriver driver) : base(driver)
+        public FooterComponent(IWebDriver driver) : base(driver)
         {
             PageFactory.InitElements(driver, this);
         }

@@ -12,8 +12,8 @@ namespace Tweed.Tests
         protected IWebDriver driver;
         public string homeURL;
 
-        //[SetUp]
-        [OneTimeSetUp]
+        [SetUp]
+        //[OneTimeSetUp]
         public void SetupTest()
         {
             homeURL = "https://uk.virginmoney.com";
@@ -21,8 +21,8 @@ namespace Tweed.Tests
             driver.Navigate().GoToUrl(homeURL);
         }
 
-        //[TearDown]
-        [OneTimeTearDown]
+        [TearDown]
+        //[OneTimeTearDown]
         public void TearDownTest()
         {
             driver.Close();

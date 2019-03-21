@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Tweed.PageObjects.Home
+namespace Tweed.PageObjects.Pages
 {
-    class HomePage : BasePage
+    class Home : BasePage
     {
-        public HomePage(IWebDriver driver) : base(driver)
+        public Home(IWebDriver driver) : base(driver)
         {
             PageFactory.InitElements(driver, this);
         }
