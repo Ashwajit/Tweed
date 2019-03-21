@@ -6,7 +6,9 @@ namespace Tweed.Tests
 {
     public class BaseTest
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         protected IWebDriver driver;
         public string homeURL;
 
