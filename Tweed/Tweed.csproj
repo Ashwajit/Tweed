@@ -60,9 +60,12 @@
   <ItemGroup>
     <Compile Include="PageObjects\BasePage.cs" />
     <Compile Include="PageObjects\Global\Footer\FooterComponent.cs" />
+    <Compile Include="PageObjects\Global\Nav\InvestmentsComponent.cs" />
+    <Compile Include="PageObjects\Global\Nav\OurProductsComponent.cs" />
     <Compile Include="PageObjects\Pages\ContactUsPage.cs" />
     <Compile Include="PageObjects\Pages\HelpSupportPage.cs" />
     <Compile Include="PageObjects\Pages\HomePage.cs" />
+    <Compile Include="PageObjects\Pages\InvestmentsHomePage.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\Global\Footer\FooterComponentTest.cs" />
     <Compile Include="Tests\Global\Nav\LogoComponentTest.cs" />

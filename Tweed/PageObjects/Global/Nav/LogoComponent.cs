@@ -10,6 +10,15 @@ namespace Tweed.PageObjects.Global.Nav
             PageFactory.InitElements(driver, this);
         }
 
+
+   
+        [FindsBy(How = How.ClassName, Using = "nav-header")]
+        public IWebElement InvestmentsLink { get; set; }
+
+        [FindsBy(How = How.ClassName, Using = "subnav-header-text")]
+        public IWebElement InvestmentshomeLink { get; set; }
+
+
         [FindsBy(How = How.Id, Using = "global-nav")]
         public IWebElement GlobalNav { get; set;  }
 
@@ -21,6 +30,8 @@ namespace Tweed.PageObjects.Global.Nav
 
         [FindsBy(How = How.ClassName, Using = "signin-text")]
         public IWebElement SignInText { get; set; }
+
+
 
         public string GetVirginLogoHref()
         {
