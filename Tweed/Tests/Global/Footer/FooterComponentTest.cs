@@ -17,5 +17,17 @@ namespace Tweed.Tests.Global.Footer
             ContactUsPage contactUsPage = new ContactUsPage(driver);
             Assert.AreEqual(contactUsPage.GetPageHeaderText(), "Contact us");
         }
+
+        [Test(Description = "Check that clicking the Help and support link loads the Help and support page")]
+        public void ClickHelpSupportLinkLoadsHelpSupportPage()
+        {
+            FooterComponent footer = new FooterComponent(driver);
+            footer.ClickHelpSupportLink();
+
+            HelpSupportPage helpsupportPage = new HelpSupportPage(driver);
+            Assert.AreEqual(helpsupportPage.GetPageHeaderText(), "WE'RE HERE TO HELP");
+        }
+
+
     }
 }

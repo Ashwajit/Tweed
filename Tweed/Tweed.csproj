@@ -61,6 +61,7 @@
     <Compile Include="PageObjects\BasePage.cs" />
     <Compile Include="PageObjects\Global\Footer\FooterComponent.cs" />
     <Compile Include="PageObjects\Pages\ContactUsPage.cs" />
+    <Compile Include="PageObjects\Pages\HelpSupportPage.cs" />
     <Compile Include="PageObjects\Pages\HomePage.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\Global\Footer\FooterComponentTest.cs" />
