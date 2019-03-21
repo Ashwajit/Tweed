@@ -67,6 +67,7 @@
     <Compile Include="PageObjects\Pages\HomePage.cs" />
     <Compile Include="PageObjects\Pages\InvestmentsHomePage.cs" />
     <Compile Include="Tests\BaseTest.cs" />
+    <Compile Include="Tests\EndToEnd\VerifyInvestmentsHomePageTest.cs" />
     <Compile Include="Tests\Global\Footer\FooterComponentTest.cs" />
     <Compile Include="Tests\Global\Nav\LogoComponentTest.cs" />
     <Compile Include="PageObjects\Global\Nav\LogoComponent.cs" />
@@ -75,9 +76,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tests\EndToEnd\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

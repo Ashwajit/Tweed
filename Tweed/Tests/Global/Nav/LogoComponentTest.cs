@@ -25,21 +25,5 @@ namespace Tweed.Tests.Global.Nav
             Assert.AreEqual(homePage.GetPageHeaderText(), "Welcome to Virgin Money");
         }
 
-        [Test(Description = "Check the Investments home page title")]
-        public void VerifyInvestmentsHomePageThroughNav()
-        {
-            OurProductsComponent ourproducts = new OurProductsComponent(driver);
-            ourproducts.ClickOurProductsLink();
-
-
-            InvestmentsComponent investmentscomponent = new InvestmentsComponent(driver);
-            investmentscomponent.ClickInvestmentsLink();
-
-            InvestmentsHomePage investmenthome = new InvestmentsHomePage(driver);
-            investmenthome.ClickInvestmentshomeLink();
-
-           Assert.AreEqual(investmenthome.GetPageHeaderText(), "INVESTMENTS");
-        }
-
     }
 }
